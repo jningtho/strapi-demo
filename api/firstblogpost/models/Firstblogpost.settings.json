@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "firstblogposts",
+  "info": {
+    "name": "firstblogpost",
+    "description": "This is the first blog post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string"
+    },
+    "Content": {
+      "default": "",
+      "type": "text"
+    },
+    "Cover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
